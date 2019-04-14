@@ -1,0 +1,85 @@
+.navbar 
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    background: #ffffff
+    &-wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+        min-height: 80px
+    &__menu-btn
+        cursor: pointer
+    &__mobile, &__landline
+        text-align: right
+    &__phone
+        margin-bottom: 5px
+        font-size: 19px
+        +bold
+        display: block
+        text-decoration: none
+    &__small-text
+        font-size: 14px
+        color: $text-color-light
+        text-decoration: none
+        display: block
+.menu
+    position: fixed
+    top: 80px
+    left: 0
+    padding: 16px 0
+    width: 100%
+    background: $primary
+    z-index: 0
+    transform: translateY(-100%)
+    &_active
+        transform: translateY(0)
+    &__nav
+        display: flex
+        align-self: center
+        justify-content: space-around
+    &__link
+        color: #ffffff
+        text-decoration: none
+        text-transform: uppercase
+        font-size: 17px
+    &-btn
+        background: transparent
+        border: none
+        border-right: 1px solid rgba(#510bba, .1)
+        border-left: 1px solid rgba(#510bba, .1)
+        height: 80px
+        width: 70px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        &__line
+            display: block
+            width: 20px
+            height: 3px
+            background: #89a9eb
+            margin-bottom: 3px
+.logo
+    &__text
+        font-size: 18px
+        text-transform: uppercase
+        display: block
+        +bold
+        margin-bottom: 5px
+    &__desc
+        font-size: 14px
+        display: block
+        color: $text-color-light
+
+.btn-o
+    text-transform: uppercase
+    padding: 17px 22px
+    border: 2px solid $primary
+    font-size: 12px
+    +bold
+    color: $primary
+    cursor: pointer
+    background: transparent
+

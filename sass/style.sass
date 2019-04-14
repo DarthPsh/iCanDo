@@ -1,2 +1,18 @@
-body
-	background: black
+   
+@import 'grid'
+@import 'fonts'
+@import 'colors'
+@import 'interface'
+
+body 
+    +light
+    color: $text-color
+*
+    outline: none
+    transition: .5s
+
+@import 'navbar'
+@import 'hero'
+
+
+
