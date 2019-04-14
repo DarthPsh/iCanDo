@@ -32,7 +32,7 @@
     width: 100%
     background: $primary
     z-index: 0
-    transform: translateY(-100%)
+    transform: translateY(-200%)
     &_active
         transform: translateY(0)
     &__nav
@@ -82,4 +82,27 @@
     color: $primary
     cursor: pointer
     background: transparent
+
+@media (max-width: 991px)
+    .navbar
+         &__mobile, &__landline
+             display: none
+
+@media (max-width: 576px)
+    .logo
+        display: none
+    .btn-o
+        font-size: 10px
+    .menu
+        top: 60px
+        &-btn
+            width: 60px
+            height: 50px
+        &__nav
+            flex-direction: column
+        &__link
+            margin-bottom: 20px
+
+
+
 

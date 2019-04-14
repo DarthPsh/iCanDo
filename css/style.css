@@ -1,7 +1,25 @@
 .container {
   max-width: 1170px;
-  width: 100%;
-  margin: 0 auto;
+  margin: auto;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
 }
 
 @font-face {
@@ -96,8 +114,8 @@ body {
   width: 100%;
   background: #507fe1;
   z-index: 0;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
 }
 
 .menu_active {
@@ -175,6 +193,37 @@ body {
   color: #507fe1;
   cursor: pointer;
   background: transparent;
+}
+
+@media (max-width: 991px) {
+  .navbar__mobile, .navbar__landline {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
+  .btn-o {
+    font-size: 10px;
+  }
+  .menu {
+    top: 60px;
+  }
+  .menu-btn {
+    width: 60px;
+    height: 50px;
+  }
+  .menu__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu__link {
+    margin-bottom: 20px;
+  }
 }
 
 .hero {
