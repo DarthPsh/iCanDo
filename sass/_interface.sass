@@ -7,3 +7,36 @@
     +bold
     &:hover
         background: darken($primary, 10%)
+
+.bg-section
+    background: $bg-section
+
+.input
+    height: 80px
+   
+
+.checkbox
+    display: none
+    &:checked + label:before
+        background: $primary
+    &-label
+        margin-right: 40px
+        display: flex
+        align-items: center
+        cursor: pointer
+        &:before
+            content: ''
+            width: 30px
+            height: 30px
+            border: 1px solid $text-color-light
+            margin-right: 20px
+
+@media (max-width: 768px)
+    .checkbox
+        &-label
+            margin-right: 20px
+            font-size: 14px
+            &:before
+                width: 10px
+                height: 10px
+                margin-right: 5px
