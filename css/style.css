@@ -116,11 +116,13 @@ body {
   z-index: 0;
   -webkit-transform: translateY(-200%);
           transform: translateY(-200%);
+  opacity: 0;
 }
 
 .menu_active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  opacity: 1;
 }
 
 .menu__nav {
@@ -229,8 +231,9 @@ body {
 .hero {
   background: #f1f1f1 url(../img/hero/hero-bg.jpg) center no-repeat;
   background-size: cover;
-  padding-top: 200px;
+  padding-top: 120px;
   padding-bottom: 270px;
+  margin-top: 80px;
 }
 
 .hero__title {
@@ -243,5 +246,18 @@ body {
   font-size: 30px;
   font-family: 'Proxima Nova Bold', sans-serif;
   margin-bottom: 60px;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    padding-top: 60px;
+    padding-bottom: 135px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    background-position: 90% 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
